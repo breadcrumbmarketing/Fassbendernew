@@ -1,0 +1,239 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+
+
+/* === Global Styles === */
+:root {
+    /* Color Palette */
+    --primary-color: #004a7c; /* Dark Blue */
+    --secondary-color: #ffa500; /* Orange */
+    --accent-color: #e0e0e0; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+    --background-color: #f9f9f9; /* Light Background */
+    --white: #ffffff; /* White */
+    --black: #000000; /* Black */
+
+    /* Typography */
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Open Sans', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+}
+
+/* === Body Styles === */
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* === Typography === */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-secondary);
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black ;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* === Buttons === */
+.button, button, input[type="submit"], input[type="button"] {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-family-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: var(--primary-color);
+}
+
+/* === Header === */
+.site-header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.site-header .site-branding img {
+    max-height: 60px;
+}
+
+.site-header .main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.site-header .main-navigation ul li {
+    margin-left: 1.5rem;
+}
+
+.site-header .main-navigation ul li a {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.site-header .main-navigation ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* === Footer === */
+.site-footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.site-footer a {
+    color: var(--secondary-color);
+}
+
+.site-footer a:hover {
+    color: var(--white);
+}
+
+/* === Layout === */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === Sections === */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* === Cards === */
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .site-header .main-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-header .main-navigation ul li {
+        margin: 0.5rem 0;
+    }
+}
