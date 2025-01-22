@@ -1,0 +1,31 @@
+# Ignore the wp-config.php file as it contains sensitive information
+wp-config.php
+
+# Ignore specific wp-content subdirectories
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/backups/
+
+# Ignore sensitive files
+wp-content/debug.log
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# Ignore specific plugin directories and themes that may contain custom or sensitive data
+wp-content/plugins/hello.php
+wp-content/themes/twenty*/      # Ignore all 'twenty' series themes
+
+# Cache and temporary files
+*.log
+*.bak
+*.swp
+*.back
+
+# Node modules if using any Node.js during development
+node_modules/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+
